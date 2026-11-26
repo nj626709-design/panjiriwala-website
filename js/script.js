@@ -1,12 +1,49 @@
 // Panjiriwala Mumbai storefront demo. Confirm actual product prices, sizes and WhatsApp number before launch.
-const WHATSAPP_NUMBER = "918360399710"; // Panjiriwala Mumbai WhatsApp (India country code + number, digits only)
+const WHATSAPP_NUMBER = "917719599710"; // Panjiriwala Mumbai WhatsApp (India country code + number, digits only)
 const products = [
-  {id:1,name:"Traditional Panjiri",category:"panjiri",desc:"A wholesome taste of tradition, prepared for sharing.",price:499,badge:"HOUSE FAVOURITE",image:"https://images.unsplash.com/photo-1605197781624-5f4a3f7f0f8c?auto=format&fit=crop&w=900&q=85",long:"A comforting traditional treat inspired by familiar homemade flavours. Confirm ingredients, pack size and price with Panjiriwala before publishing."},
-  {id:2,name:"Desi Ghee Laddoo",category:"laddoo",desc:"Rich, comforting and made for sharing.",price:599,badge:"BESTSELLER",image:"https://images.unsplash.com/photo-1599599810694-b5b373f5a5a5?auto=format&fit=crop&w=900&q=85",long:"A classic laddoo treat for family gatherings, festive moments and everyday cravings. Actual ingredients and pack size to be confirmed."},
-  {id:3,name:"Panjiri Gift Box",category:"gifting",desc:"A thoughtful gift for your loved ones.",price:799,badge:"GIFT READY",image:"https://images.unsplash.com/photo-1608539073874-2a3b8f4f9f4f?auto=format&fit=crop&w=900&q=85",long:"A gifting concept featuring traditional Panjiri. The gift packaging and contents can be finalized to suit the occasion."},
-  {id:4,name:"Festive Laddoo Box",category:"gifting",desc:"Celebrate life's sweetest occasions.",price:899,badge:"CELEBRATION",image:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85",long:"A festive gifting option for celebrations, visits and special moments. Confirm available assortments and box size."},
-  {id:5,name:"Panjiri — Family Pack",category:"panjiri",desc:"A generous pack for sharing at home.",price:999,badge:"FAMILY SIZE",image:"https://images.unsplash.com/photo-1605197781624-5f4a3f7f0f8c?auto=format&fit=crop&w=900&q=85",long:"Family-pack concept for those who love keeping traditional flavours on hand. Pack weight and pricing are demo values."},
-  {id:6,name:"Laddoo Celebration Pack",category:"laddoo",desc:"Sweeten celebrations and get-togethers.",price:1099,badge:"FOR CELEBRATIONS",image:"https://images.unsplash.com/photo-1599599810694-b5b373f5a5a5?auto=format&fit=crop&w=900&q=85",long:"A celebration-sized laddoo box concept. Please confirm actual quantities, pack size and final price."}
+  {
+    id: 1,
+    name: "Traditional Panjiri",
+    category: "panjiri",
+    desc: "A wholesome taste of tradition, prepared for sharing.",
+    price: 499,
+    badge: "HOUSE FAVOURITE",
+    image: "assets/protein powder.jpg",
+    long: "A comforting traditional treat inspired by familiar homemade flavours. Confirm ingredients, pack size and price with Panjiriwala before publishing."
+  },
+
+  {
+    id: 2,
+    name: "Desi Ghee Laddoo",
+    category: "laddoo",
+    desc: "Rich, comforting and made for sharing.",
+    price: 599,
+    badge: "BESTSELLER",
+    image: "assets/laddu.jpg",
+    long: "A classic laddoo treat for family gatherings, festive moments and everyday cravings. Actual ingredients and pack size to be confirmed."
+  },
+
+  {
+    id: 3,
+    name: "Panjiri Gift Box",
+    category: "gifting",
+    desc: "A thoughtful gift for your loved ones.",
+    price: 799,
+    badge: "GIFT READY",
+    image: "assets/gifting-special.jpg",
+    long: "A gifting concept featuring traditional Panjiri. The gift packaging and contents can be finalized to suit the occasion."
+  },
+
+  {
+    id: 4,
+    name: "Festive Laddoo Box",
+    category: "gifting",
+    desc: "Celebrate life's sweetest occasions.",
+    price: 899,
+    badge: "CELEBRATION",
+    image: "assets/laddu-box.jpg",
+    long: "A festive gifting option for celebrations, visits and special moments. Confirm available assortments and box size."
+  },
 ];
 let cart = JSON.parse(localStorage.getItem("panjiriwalaCart") || "[]");
 const productGrid = document.getElementById("productGrid");

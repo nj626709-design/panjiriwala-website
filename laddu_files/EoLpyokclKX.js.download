@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("WAWebVoipDeferredBootJsBackend",["WAWebHandleVoipCallOffer","WAWebVoipInit"],function(t,n,r,o,a,i){var e=importNamespace("WAWebHandleVoipCallOffer").handleVoipCallOffer,l=importNamespace("WAWebVoipInit").initWAWebVoip;i.handleVoipCallOffer=e,i.initWAWebVoip=l},66);
+__d("WAWebVoipDeferredBootStackInterface",["WAWebVoipStackInterfaceImpl"],function(t,n,r,o,a,i){var e=importNamespace("WAWebVoipStackInterfaceImpl").getVoipStackInterfaceImpl;i.getVoipStackInterfaceImpl=e},66);
